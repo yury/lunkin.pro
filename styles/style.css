@@ -16,7 +16,7 @@ body {
 
 h1 {
   font-weight: 400;
-  font-size:44px;
+  font-size: 44px;
 }
 
 .container {
@@ -24,13 +24,19 @@ h1 {
 }
 
 /* хром, сафари */
-.noscroll::-webkit-scrollbar { width: 0; }
+.noscroll::-webkit-scrollbar {
+  width: 0;
+}
 
 /* ie 10+ */
-.noscroll { -ms-overflow-style: none; }
+.noscroll {
+  -ms-overflow-style: none;
+}
 
 /* фф (свойство больше не работает, других способов тоже нет)*/
-.noscroll { overflow: -moz-scrollbars-none; }
+.noscroll {
+  overflow: -moz-scrollbars-none;
+}
 
 .slogan {
   display: block;
@@ -41,7 +47,7 @@ h1 {
 }
 
 .slogan-1 {
-  text-align:right;
+  text-align: right;
 }
 
 .slogan-2 {
@@ -69,7 +75,8 @@ h1 {
   overflow: scroll;
 }
 
-.done, .current {
+.done,
+.current {
   min-width: -webkit-min-content;
   min-width: min-content;
 }
@@ -78,8 +85,8 @@ h1 {
   flex-basis: 80px;
 }
 
-
-.done ul, .current ul {
+.done ul,
+.current ul {
   border-left: 1px solid #979797;
   border-top: 1px solid #979797;
 }
@@ -100,7 +107,7 @@ li {
 }
 
 li:before {
-  content: "–";
+  content: '–';
   padding-right: 2em;
   color: #979797;
 }
@@ -131,10 +138,10 @@ h5 {
   color: #c4c6c8;
 }
 
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 568px) {
-  h1 { font-size: 24px }
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  h1 {
+    font-size: 24px;
+  }
   .slogan {
     padding: 3px 24px;
     margin-bottom: 10px;
@@ -160,7 +167,7 @@ and (max-device-width : 568px) {
   }
 
   li:before {
-    content: "–";
+    content: '–';
     padding-right: 1em;
     color: #979797;
   }
