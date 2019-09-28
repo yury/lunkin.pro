@@ -6,7 +6,7 @@ export default class MyDocument extends Document {
       <html lang="ru">
         <Head>
           <meta name="viewport" content="initial-scale=1.0" />
-          <meta charset="utf-8" />
+          <meta charSet="utf-8" />
           <script src="/static/wow.min.js" />
           <link rel="stylesheet" href="/_next/static/style.css" />
         </Head>
