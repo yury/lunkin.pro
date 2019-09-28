@@ -1,11 +1,10 @@
-import Document, { Head, Main, NextScript } from 'next/document';
+import Document, {Main, Head, NextScript} from 'next/document';
 
 export default class MyDocument extends Document {
   render() {
     return (
       <html lang="ru">
         <Head>
-          <title>Lunkin.pro</title>
           <meta name="viewport" content="initial-scale=1.0" />
           <meta charset="utf-8" />
           <script src="/static/wow.min.js" />

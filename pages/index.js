@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import '../styles/style.css';
 import '../styles/animate.css';
 
@@ -315,21 +316,24 @@ const current = [
 ];
 export default class Index extends React.Component {
   _renderItems = items =>
-    items.map(item => (
-      <li>
+    items.map((item, i) => (
+      <li key={i}>
         <strong>{item.name}</strong>
         <div className="desc">{item.desc}</div>
       </li>
     ));
   _renderLists = (lists, className) =>
-    lists.map(list => (
-      <div className={className}>
+    lists.map((list, i) => (
+      <div key={i} className={className}>
         <h5>{list.year}</h5>
         <ul>{this._renderItems(list.items)}</ul>
       </div>
     ));
   render = () => (
     <div>
+      <Head>
+        <title>Lunkin.pro</title>
+      </Head>
       <h1
         className="wow fadeInUp"
         data-wow-delay="4.8s"
