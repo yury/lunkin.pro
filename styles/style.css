@@ -1,0 +1,172 @@
+html: {
+  background: #18181a;
+}
+
+body {
+  background: #18181a url(/static/bg.jpg) repeat-x center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  color: #f9f9f9;
+  font-family: -apple-system, Helvetica, Arial, san-serif;
+}
+
+h1 {
+  font-weight: 400;
+  font-size:44px;
+}
+
+.container {
+  width: 100%;
+}
+
+/* хром, сафари */
+.noscroll::-webkit-scrollbar { width: 0; }
+
+/* ie 10+ */
+.noscroll { -ms-overflow-style: none; }
+
+/* фф (свойство больше не работает, других способов тоже нет)*/
+.noscroll { overflow: -moz-scrollbars-none; }
+
+.slogan {
+  display: block;
+  padding: 3px 38px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.slogan-1 {
+  text-align:right;
+}
+
+.slogan-2 {
+  flex-shrink: 1;
+  text-shadow: 0 0 15px #939393;
+}
+
+.part {
+  width: 50%;
+  float: left;
+  overflow: scroll;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  overflow: scroll;
+}
+
+.timeline-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  overflow: scroll;
+}
+
+.done, .current {
+  min-width: -webkit-min-content;
+  min-width: min-content;
+}
+
+.current {
+  flex-basis: 80px;
+}
+
+
+.done ul, .current ul {
+  border-left: 1px solid #979797;
+  border-top: 1px solid #979797;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+  margin-top: 0;
+}
+
+li {
+  padding-left: 2em;
+  text-indent: -2em;
+  padding-right: 3em;
+}
+
+li:before {
+  content: "–";
+  padding-right: 2em;
+  color: #979797;
+}
+
+li {
+  margin-bottom: 18px;
+  font-weight: 300;
+}
+
+.desc {
+  padding-left: 5em;
+  font-size: 14px;
+  color: #c0c0c8;
+}
+
+li strong {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #d4d2d8;
+}
+
+h5 {
+  display: flex;
+  padding: 6px 12px;
+  margin: 0;
+  border-left: 1px solid #979795;
+  line-height: 0.6;
+  color: #c4c6c8;
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  h1 { font-size: 24px }
+  .slogan {
+    padding: 3px 24px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .desc {
+    padding-left: 3em;
+    font-size: 10px;
+    color: #c0c0c8;
+  }
+
+  li strong {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #d4d2d8;
+  }
+
+  li {
+    padding-left: 1em;
+    text-indent: -1em;
+    padding-right: 2em;
+  }
+
+  li:before {
+    content: "–";
+    padding-right: 1em;
+    color: #979797;
+  }
+
+  .part {
+    overflow-x: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
+  }
+}
