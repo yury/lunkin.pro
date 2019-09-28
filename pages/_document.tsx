@@ -10,7 +10,6 @@ export default class MyDocument extends Document {
           <script src="/static/wow.min.js" />
         </Head>
         <body>
-          <script>new WOW().init();</script>
           <Main />
           <NextScript />
         </body>

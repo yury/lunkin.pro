@@ -327,10 +327,14 @@ export default class Index extends React.Component {
         <ul>{this._renderItems(list.items)}</ul>
       </div>
     ));
+
+  componentDidCatch() {}
+
   render = () => (
     <div>
       <Head>
         <title>Lunkin.pro</title>
+        <script>new WOW().init();</script>
       </Head>
       <h1
         className="wow fadeInUp"
