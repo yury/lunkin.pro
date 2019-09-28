@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
+  },
   "dependencies": {
     "@zeit/next-css": "1.0.1",
     "next": "9.0.6",
     "react": "16.10.0",
     "react-dom": "16.10.0"
-  },
-  "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
   }
 }
