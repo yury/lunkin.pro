@@ -1,5 +1,9 @@
 {
   "version": 2,
   "public": true,
-  "builds": [{"src": "/out", "use": "@now/static"}]
+  "builds": [{
+    "src": "package.json",
+    "use": "@now/static-build"
+    "config": { "distDir": "out" }
+  }]
 }
