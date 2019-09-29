@@ -1,4 +1,8 @@
 {
   "version": 2,
-  "public": true
+  "public": true,
+  "builds": [
+    {"src": "package.json", "@use/now-node"},
+    {"src": "/out/*", "@use/now-static"},
+  ]
 }
